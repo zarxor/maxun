@@ -76,6 +76,7 @@ services:
     env_file: .env
     environment:
       PUBLIC_URL: ${PUBLIC_URL}
+      VITE_PUBLIC_URL: ${VITE_PUBLIC_URL:PUBLIC_URL}
       BACKEND_URL: ${BACKEND_URL}
     depends_on:
       - backend
